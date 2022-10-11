@@ -1,0 +1,2 @@
+# CardCalismasi
+Basit algoritma Çalışması
