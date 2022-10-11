@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kart SecimVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="KartSecimVC" customModule="Card_Calismasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10C" translatesAutoresizingMaskIntoConstraints="NO" id="T0P-Ux-anc">
+                                <rect key="frame" x="70" y="172" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5Tg-Cp-1ZD"/>
+                                    <constraint firstAttribute="height" constant="350" id="ibH-4T-vAd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjR-aC-5Ke">
+                                <rect key="frame" x="65" y="572" width="260" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="HU1-C9-8Eu"/>
+                                    <constraint firstAttribute="height" constant="50" id="huU-ym-0hS"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="stop.circle" catalog="system" title="Dur!" imagePadding="5">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="durButonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceY-fO-GPz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-Ov-1SB">
+                                <rect key="frame" x="65" y="642" width="115" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="Pzg-oR-Jgt"/>
+                                    <constraint firstAttribute="height" constant="50" id="bDG-pu-0eo"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.uturn.backward" catalog="system" title="Reset" imagePadding="3">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awn-ZR-1tX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrT-Xt-yQq">
+                                <rect key="frame" x="210" y="642" width="115" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NBC-Xa-yyE"/>
+                                    <constraint firstAttribute="width" constant="115" id="YfI-OK-Ou5"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="list.bullet.clipboard" catalog="system" title="Kurallar" imagePadding="4">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="zOJ-Im-XtE" kind="presentation" id="g1l-GW-WKK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qjR-aC-5Ke" firstAttribute="top" secondItem="T0P-Ux-anc" secondAttribute="bottom" constant="50" id="0UQ-RU-9YD"/>
+                            <constraint firstItem="dCf-Ov-1SB" firstAttribute="top" secondItem="qjR-aC-5Ke" secondAttribute="bottom" constant="20" id="D54-Wi-UF6"/>
+                            <constraint firstItem="qjR-aC-5Ke" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ekv-I2-oEN"/>
+                            <constraint firstItem="KrT-Xt-yQq" firstAttribute="trailing" secondItem="qjR-aC-5Ke" secondAttribute="trailing" id="GJB-07-irE"/>
+                            <constraint firstItem="T0P-Ux-anc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XrK-xo-tAY"/>
+                            <constraint firstItem="KrT-Xt-yQq" firstAttribute="centerY" secondItem="dCf-Ov-1SB" secondAttribute="centerY" id="jvf-eN-Nbo"/>
+                            <constraint firstItem="dCf-Ov-1SB" firstAttribute="leading" secondItem="qjR-aC-5Ke" secondAttribute="leading" id="kMR-Qu-lhx"/>
+                            <constraint firstItem="T0P-Ux-anc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="oDX-Wi-vZa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kartImageView" destination="T0P-Ux-anc" id="K8w-fL-tOh"/>
+                        <outletCollection property="butonlar" destination="qjR-aC-5Ke" collectionClass="NSMutableArray" id="ETM-N9-KZp"/>
+                        <outletCollection property="butonlar" destination="KrT-Xt-yQq" collectionClass="NSMutableArray" id="STZ-P1-7ap"/>
+                        <outletCollection property="butonlar" destination="dCf-Ov-1SB" collectionClass="NSMutableArray" id="xG7-Qw-V9X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DNQ-u3-QFm">
+            <objects>
+                <viewController id="zOJ-Im-XtE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kir-YM-rwk">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kurallar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6E-0g-i7E">
+                                <rect key="frame" x="30" y="128" width="330" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JR-5H-FNf">
+                                <rect key="frame" x="30" y="196" width="330" height="107.66666666666669"/>
+                                <string key="text">Her kartın değeri yaptığınız egzersiz sayısını temsil eder. 
+
+J=11, Q=12, K=13, A=14</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jaj-VL-srw">
+                                <rect key="frame" x="95" y="378.66666666666669" width="200" height="167.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TfD-Wn-Rvz"/>
+                                </constraints>
+                                <string key="text">♠️ = Maça
+ ♥️ = Kupa
+ ♣️ = Sinek
+ ♦️ = Karo</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ToN-1g-cIb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ToN-1g-cIb" firstAttribute="trailing" secondItem="C6E-0g-i7E" secondAttribute="trailing" constant="30" id="3db-wr-Sz0"/>
+                            <constraint firstItem="7JR-5H-FNf" firstAttribute="leading" secondItem="ToN-1g-cIb" secondAttribute="leading" constant="30" id="8LF-N0-bf7"/>
+                            <constraint firstItem="C6E-0g-i7E" firstAttribute="top" secondItem="ToN-1g-cIb" secondAttribute="top" constant="81" id="B7w-RF-ZfH"/>
+                            <constraint firstItem="Jaj-VL-srw" firstAttribute="centerX" secondItem="Kir-YM-rwk" secondAttribute="centerX" id="a3L-pH-WDU"/>
+                            <constraint firstItem="Jaj-VL-srw" firstAttribute="top" secondItem="7JR-5H-FNf" secondAttribute="bottom" constant="75" id="eyU-pz-nwz"/>
+                            <constraint firstItem="ToN-1g-cIb" firstAttribute="trailing" secondItem="7JR-5H-FNf" secondAttribute="trailing" constant="30" id="mkU-oe-HGi"/>
+                            <constraint firstItem="7JR-5H-FNf" firstAttribute="top" secondItem="C6E-0g-i7E" secondAttribute="bottom" constant="20" id="pKC-7k-rY7"/>
+                            <constraint firstItem="C6E-0g-i7E" firstAttribute="leading" secondItem="ToN-1g-cIb" secondAttribute="leading" constant="30" id="yS3-De-Kes"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rZ-PX-3up" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10C" width="691" height="1056"/>
+        <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
+        <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
+        <image name="stop.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
